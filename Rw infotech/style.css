@@ -1,0 +1,215 @@
+*{
+    padding :0px;
+    margin:0px;
+    box-sizing: border-box;
+    font-family: "IBM Plex Mono", monospace;
+   
+
+}
+body
+{
+    background: #C5E4E7;
+}
+.container
+{
+    max-width:1170px;
+    margin:50px auto;
+    box-sizing: border-box;
+    padding: 0px 20px;
+    clear: both;
+ 
+}
+.main-heading
+{
+    display: flex;
+    justify-content: center;
+    padding:50px 0px;
+}
+.main-heading h1
+{
+    text-transform: uppercase;
+    color: #406667;
+    font-size: 40px;
+    font-weight: 600;
+    width:100px;
+
+}
+.calc-wrapper
+{
+    background: #fff;
+    padding: 50px 30px;
+    border-radius: 20px;
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+.left_form, .right_form {
+   width: calc(50% - 25px);
+}
+.right_form {
+    background: #00474B;
+    border-radius: 15px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.tip {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.tip-box {
+    margin-top: 20px;
+}   
+
+.lable_white
+{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+}
+.lable_sml
+{
+    color: #649BA0;
+    font-size:16px;
+    font-weight: 500;
+}
+.total_price
+{
+    color: #21C3AC;
+    font-size:40px;
+    font-weight: 700;  
+}
+.total {
+    
+    padding-top: 40px;
+}
+.reset_btn button {
+    width: 100%;
+    background: #0D686D;
+    border-radius: 10px;
+    color:#004849;
+    border: none;
+    font-size: 24px;
+    font-weight: 700;
+    padding: 6px;
+    text-transform: uppercase;
+}
+.lable_input
+{
+    color: #6B7777;
+    font-size:20px;
+    font-weight: 500;
+}
+.btn-wrap button
+{
+    background-color: #00474B;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 600;
+    width: calc(33.33% - 14px);
+    border:none;
+    padding: 8px 
+}
+.btn-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 30px 0px;
+}
+.btn-wrap .custom_input {
+    background-color: #F3F8FB;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    color: #00474B;
+    padding: 8px;
+    width: calc(33.33% - 14px);
+    color:#00474B;
+    font-size: 22px;
+    font-weight: 700;
+}
+.btn-wrap .custom_input::placeholder
+{
+    color: #00474B;
+    font-size: 24px;
+    font-weight: 600;
+}
+.btn-wrap .custom_input:focus::placeholder{
+    color: transparent;
+  }
+
+.input_select {
+    width: 100%;
+    background: #F3F8FB;
+    border: none;
+    text-align: end;
+    padding: 12px;
+    border-radius: 10px;
+    margin-top: 10px;
+    color:#00474B;
+    font-size: 22px;
+    font-weight: 700;
+    position: relative;
+    
+}
+.input_select::placeholder
+{
+    color: #A9C3C6;
+    font-size: 22px;
+    font-weight: 600;
+}
+.reset_btn button:hover, .reset_btn button:active
+{
+    background-color: #9FE8DF;
+}
+
+.btn-wrap button:hover, .btn-wrap button:active
+{
+    background-color: #9FE8DD;
+    color: #00474B;
+}
+
+.input_select:focus, .input_select:focus-within, .input_select:focus-visible, .custom_input:focus, .custom_input:focus-within, .custom_input:focus-visible {
+   
+    outline: 2px solid #26C2AD;
+    color:#00474B;
+    font-size: 22px;
+    font-weight: 700;
+  }
+  .input_select::after{
+  content: "Read this -";
+  background-color: yellow;
+  color: red;
+  font-weight: bold;
+  }
+  .input-field i {
+    position: absolute;
+    padding: 20px 0px;
+    color: #A9C3C6;
+    min-width: 50px;
+    text-align: center;
+    z-index: 99;
+    font-size: 24px;
+}
+.doller_icon::before {
+    content: '$';
+    position: absolute;
+    padding: 20px 0px;
+    color: #A9C3C6;
+    min-width: 50px;
+    text-align: center;
+    z-index: 99;
+    font-size: 24px;
+}
+
+@media only screen and (max-width: 767px)
+{
+    .left_form, .right_form {
+        width: 100%;
+    }
+}
+  
